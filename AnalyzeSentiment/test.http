@@ -1,0 +1,6 @@
+POST http://localhost:7071/api/AnalyzeSentiment
+Content-Type: application/json
+
+{
+    "text": "I am so so happy"
+}
