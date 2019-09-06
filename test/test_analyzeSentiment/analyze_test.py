@@ -1,6 +1,8 @@
+import logging
+
 import azure.functions as func
 import json
-from . import main
+from __app__.analyzeSentiment import main
 
 def test_mytest():
 
@@ -13,5 +15,4 @@ def test_mytest():
     )
 
     ret = main(req)
-    print(ret)
-    assert ret.status_code == 400
+    assert ret.status_code == 200

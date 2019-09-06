@@ -5,5 +5,5 @@
   "azureFunctions.projectRuntime": "~2",
   "debug.internalConsoleOptions": "neverOpen",
   "azureFunctions.preDeployTask": "func: pack",
-  "python.pythonPath": ".env/bin/python3.6"
+  "python.pythonPath": ".env/bin/python3"
 }

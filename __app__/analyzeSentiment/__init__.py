@@ -1,6 +1,7 @@
 import logging
 
 import azure.functions as func
+from ..SharedCode import mysharedcode
 from textblob import TextBlob
 import nltk
 import os
@@ -13,6 +14,8 @@ nltk.data.path.append(os.path.join(os.path.curdir, 'nltk_data'))
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
+
+    logging.info(mysharedcode.my_shared_method())
 
     local_var = uuid.uuid4()
     
